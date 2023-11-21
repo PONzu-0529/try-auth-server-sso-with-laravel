@@ -1,10 +1,10 @@
 {
-	"name": "ponzu0529-tools",
+	"name": "try-auth-server-sso-with-laravel",
 	"dockerComposeFile": [
-		"docker-compose.yml"
+		"../docker-compose.yml"
 	],
-	"service": "httpd",
-	"workspaceFolder": "WORKSPACE_FOLDER",
+	"service": "", // Set Service Name
+	"workspaceFolder": "", // Set Current Path (e.g. pwd -> '/home/username/try-auth-server-sso-with-laravel')
 	"extensions": [
 		"oderwat.indent-rainbow", // indent-rainbow
 		"wmaurer.change-case", // change-case
@@ -25,6 +25,6 @@
 		"ms-python.python", // Python
 		"humao.rest-client" // REST Client
 	],
-	"remoteUser": "USER_NAME"
+	"remoteUser": "" // Set Current User (e.g. whoami -> 'username')
 	// "shutdownAction": "none",
 }

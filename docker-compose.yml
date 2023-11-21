@@ -1,13 +1,13 @@
 version: "3"
 services:
-  httpd:
+  dev_auth:
     build:
-      context: "${LOCAL_HOST_PATH}/httpd"
+      context: "${LOCAL_HOST_PATH}/build/DevAuth"
       dockerfile: Dockerfile
       args:
         - DOCUMENT_ROOT=/home/${XSERVER_ID}/${XSERVER_DOMAIN}/public_html/${XSERVER_SUBDOMAIN}
         - USERNAME=${USERNAME}
-    container_name: "${PROJECT_NAME}_httpd"
+    container_name: "${PROJECT_NAME}-dev-auth"
     env_file: .env
     environment:
       TZ: Asia/Tokyo
